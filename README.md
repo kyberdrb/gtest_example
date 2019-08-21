@@ -21,3 +21,27 @@ e.g.
     ...
     
 after the `add_executable` or `add_library` command.
+
+## \[OPTIONAL\] Create a dedicated testing configuration in CLion
+
+CLion provides the opportunity to create a dedicated unit test configuration.
+
+1. Go to `Run -> Edit Configurations`
+1. Click on the 'plus sign' icon '+' button in the left upper corner.
+1. Select `Google Test`.
+1. Fill the parameters:
+    - **Name:** enter a name of the test suite
+    - **Test kind:** Suite/Test
+    - **Target:** unit_tests
+1. Save changes by clicking on `OK`.
+1. Select the Google Test configuration in the drop down menu in the upper right corner of CLion.
+It should be listed as the last option.
+1. Run the unit test configuration.
+The results will be displayed at the bottom of the window in a tree structure.
+
+Now we have 2 options to run the unit tests in CLion:
+- standard 'unit_tests' configuration with text results, and
+- special Google Test configuration with graphical results
+I personally prefer the traditional text output.
+At the same time I realize that in larger projects the tree structure
+might be much quicker to navigate.
