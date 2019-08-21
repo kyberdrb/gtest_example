@@ -1,6 +1,7 @@
 #include <iostream>
+#include "Example.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << Example().foo() << std::endl;
     return 0;
 }
