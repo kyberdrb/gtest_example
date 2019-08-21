@@ -1,0 +1,1 @@
+add_executable(gtest_example main.cpp Example.cpp Example.h)
