@@ -1,4 +1,10 @@
-add_executable(unit_tests ExampleTestSuite.cpp)
+add_executable(unit_tests)
+target_sources(
+        unit_tests
+
+        PRIVATE
+        ExampleTestSuite.cpp
+)
 target_link_libraries(
         unit_tests
         gtest_main
