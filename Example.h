@@ -1,5 +1,8 @@
 #pragma once
 
-class Example {
+#include <string>
 
+class Example {
+public:
+    std::string foo();
 };
