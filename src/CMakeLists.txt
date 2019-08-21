@@ -18,3 +18,9 @@ target_sources(
         PUBLIC
         Example.h
 )
+target_include_directories(
+        gtest_example_library
+
+        PUBLIC
+        ${CMAKE_CURRENT_LIST_DIR}
+)
