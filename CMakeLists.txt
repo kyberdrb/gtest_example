@@ -15,3 +15,11 @@ add_subdirectory(${GOOGLE_TEST_DIR})
 include_directories(${GOOGLE_TEST_DIR}/googletest/include)
 enable_testing()
 add_subdirectory(tests)
+
+set(TEST_COVERAGE_FLAGS "")
+if(CMAKE_CXX_COMPILER_ID MATCHES GNU)
+    set(TEST_COVERAGE_FLAGS "-fprofile-arcs -ftest-coverage")
+endif()
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TEST_COVERAGE_FLAGS}")
+message(STATUS, "CXXFLAGS: ${CMAKE_CXX_FLAGS}")
