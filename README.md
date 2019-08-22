@@ -1,6 +1,23 @@
 # gtest_example
 Example project with integrated Google Test Framework with step-by-step tutorial
 
+## Quick start guide - Use the project as a base for your next project
+
+1. Copy directories `src` and `tests` together with the `CMakeLists.txt`
+from the root directory to your new project.
+1. From your new project delete `main.cpp` in the root dir.
+1. Press `Ctrl+Shift+R`
+1. In the first line enter `gtest_example`.
+1. In the second line enter the name of the project.
+1. Build all project configurations:
+    - `<project_name>`, 
+    - `<project_name>_library`, and
+    - `unit_tests`
+1. Run the `<project_name>` configuration to see if the application is running correctly.
+1. Run the `unit_tests` configuration to see if all unit tests pass.
+
+## Step-by-step guide - Recreate the project on your own
+
 Below are listed the branches in order in which they were created.
 
 Underneath a step can be a notice
