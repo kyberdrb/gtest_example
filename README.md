@@ -1,6 +1,35 @@
 # gtest_example
 Example project with integrated Google Test Framework with step-by-step tutorial
 
+Below are listed the branches in order in which they were created.
+
+Underneath a step can be a notice
+
+To check detailed steps, see the commits and their descriptions for the particular branch.
+
+1. add_gitignore
+1. create_example_project
+1. separate_sources_from_entire_project
+
+    Manually move source and header files from `add_executable` or `add_library` 
+    to `target_sources` command.
+  
+1. prepare_project_for_google_test
+    1. build_lib_from_src
+    1. define_gnu_install_dirs
+1. integrate_google_test
+1. configure_test_module
+1. integrate_test_module_to_project
+1. add_test_case
+
+    Every new test case is added only to targets `unit_tests`
+    in order for the tests to be decoupled from the production code.
+  
+1. enable_test_coverage
+1. create_dedicated_test_configuration_in_clion
+
+---  
+
 ## Troubleshooting
 
 'set_target_properties' is only generating error "Cannot determine link language for target XYZ"
